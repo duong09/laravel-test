@@ -18,7 +18,11 @@ services:
             - web_storage_debugbar:/var/www/html/storage/debugbar
             - web_node_modules:/var/www/html/node_modules
 
+<<<<<<< HEAD
     # mySQL
+=======
+    # PostgreSQL
+>>>>>>> 7731cf9a25ded5b42459b096149d23aa74873715
     db:
         container_name: mysql_db
         image: mysql:latest
