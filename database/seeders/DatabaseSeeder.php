@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
         // Post::truncate();
 
         $users = User::factory()->count(3)->create();
-        $categories = Category::factory()->count(4)->create();
+        $categories = Category::factory()->count(3)->create();
         foreach ($users as $user) {
             # code...
             $posts = Post::factory()
@@ -34,7 +34,7 @@ class DatabaseSeeder extends Seeder
         foreach ($categories as $category) {
             # code...
             $posts = Post::factory()
-                ->count(3)
+                ->count(2)
                 ->for($category)
                 ->create();
         }
